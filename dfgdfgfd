@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы</title>
+    <style>
+        /* Общие стили */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Сетка */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
+        }
+
+        .grid-item {
+            grid-column: span 4;
+        }
+
+        /* Шапка */
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav li {
+            margin-right: 20px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Основной контент */
+        .main {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .section-1 {
+            grid-column: span 4;
+        }
+
+        .section-2 {
+            grid-column: span 4;
+        }
+
+        .section-3 {
+            grid-column: span 4;
+        }
+
+        /* Нижний колонтитул */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section-1 grid-item">
+            <h2>Заголовок 1</h2>
+            <p>Текст 1</p>
+            <img src="image1.jpg" alt="Изображение 1">
+        </section>
+        <section class="section-2 grid-item">
+            <h2>Заголовок 2</h2>
+            <p>Текст 2</p>
+            <img src="image2.jpg" alt="Изображение 2">
+        </section>
+        <section class="section-3 grid-item">
+            <h2>Заголовок 3</h2>
+            <p>Текст 3</p>
+            <img src="image3.jpg" alt="Изображение 3">
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Пример страницы</p>
+    </footer>
+</body>
+</html>
